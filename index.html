@@ -19,16 +19,16 @@
         <p>Halo, ini adalah halaman depan website Saya
         <p>Website ini dibuat sebagai tugas mata kuliah desain web dan sekarang sudah diubah menjadi **Progressive Web App (PWA)**. Dengan fitur PWA, Anda bisa menginstal situs ini di perangkat Anda dan mengaksesnya bahkan saat offline.</p>
 
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function(err) {
-                    console.log('ServiceWorker registration failed: ', err);
-                });
+   <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+                console.log('ServiceWorker registration failed: ', err);
             });
-        }
+        });
+    }
     </script>
 </body>
 </html>
