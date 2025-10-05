@@ -16,20 +16,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-    ],
-  "screenshots": [
-    {
-      "src": "images/desktop-screenshot.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Tampilan Desktop PWA"
-    },
-    {
-      "src": "images/mobile-screenshot.png",
-      "sizes": "720x1280",
-      "type": "image/png",
-      "label": "Tampilan Mobile PWA"
-    }
   ]
 }
