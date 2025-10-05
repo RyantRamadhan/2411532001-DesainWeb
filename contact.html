@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Imam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h1>Ayo Berkenalan</h1>
+        
+    <form id="contactForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="category">Kategori Pesan:</label>
+        <select id="category" name="category">
+            <option value="" selected disabled >Pilih kategori</option>
+            <option value="question">Pertanyaan</option>
+            <option value="suggestion">Saran</option>
+            <option value="problem">Masalah</option>
+        </select>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <p>Apakah Anda ingin menerima balasan?</p>
+        <div class="radio-group">
+            <input type="radio" id="reply-yes" name="reply" value="yes" required>
+            <label for="reply-yes">Ya</label>
+            <input type="radio" id="reply-no" name="reply" value="no" required>
+            <label for="reply-no">Tidak</label>
+        </div>
+        
+        <button type="submit">Kirim</button>
+    </form>
+</div>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Pesan berhasil dikirim! Terima kasih telah menghubungi saya.');
+    });
+</script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+    </div>
+    
+</body>
+</html>
