@@ -1,13 +1,13 @@
 const CACHE_NAME = 'imam-pwa-cache-v1';
 const urlsToCache = [
-  './',
-  'index.html',
-  'about.html',
-  'contact.html',
-  'offline.html',
-  'style.css',
-  'images/icons-192.png',
-  'images/icons-512.png'
+  '/Tugas-Desainweb/',
+  '/Tugas-Desainweb/index.html',
+  '/Tugas-Desainweb/about.html',
+  '/Tugas-Desainweb/contact.html',
+  '/Tugas-Desainweb/offline.html',
+  '/Tugas-Desainweb/style.css',
+  '/Tugas-Desainweb/images/icons-192.png',
+  '/Tugas-Desainweb/images/icons-512.png'
 ];
 
 self.addEventListener('install', (event) => {
