@@ -1,4 +1,4 @@
-const CACHE_NAME = 'imam-pwa-cache-v1';
+const CACHE_NAME = 'imam-pwa-cache-v2';
 const urlsToCache = [
   '/2411532001-DesainWeb/',
   '/2411532001-DesainWeb/index.html',
