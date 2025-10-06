@@ -1,13 +1,13 @@
 const CACHE_NAME = 'imam-pwa-cache-v1';
 const urlsToCache = [
-  '/Tugas-Desainweb/',
-  '/Tugas-Desainweb/index.html',
-  '/Tugas-Desainweb/about.html',
-  '/Tugas-Desainweb/contact.html',
-  '/Tugas-Desainweb/offline.html',
-  '/Tugas-Desainweb/style.css',
-  '/Tugas-Desainweb/images/icons-192.png',
-  '/Tugas-Desainweb/images/icons-512.png'
+  '/2411532001-DesainWeb/',
+  '/2411532001-DesainWeb/index.html',
+  '/2411532001-DesainWeb/about.html',
+  '/2411532001-DesainWeb/contact.html',
+  '/2411532001-DesainWeb/offline.html',
+  '/2411532001-DesainWeb/style.css',
+  '/2411532001-DesainWeb/images/icons-192.png',
+  '/2411532001-DesainWeb/images/icons-512.png'
 ];
 
 self.addEventListener('install', (event) => {
@@ -28,7 +28,7 @@ self.addEventListener('fetch', (event) => {
         }
         return fetch(event.request)
           .catch(() => {
-            return caches.match('offline.html');
+            return caches.match('/2411532001-DesainWeb/offline.html');
           });
       })
   );
