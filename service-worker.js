@@ -1,13 +1,13 @@
-const CACHE_NAME = 'imam-pwa-cache-v2';
+const CACHE_NAME = 'imam-pwa-cache-v3';
 const urlsToCache = [
-  '/2411532001-DesainWeb/',
-  '/2411532001-DesainWeb/index.html',
-  '/2411532001-DesainWeb/about.html',
-  '/2411532001-DesainWeb/contact.html',
-  '/2411532001-DesainWeb/offline.html',
-  '/2411532001-DesainWeb/style.css',
-  '/2411532001-DesainWeb/images/icons-192.png',
-  '/2411532001-DesainWeb/images/icons-512.png'
+  '/',
+  'index.html',
+  'about.html',
+  'contact.html',
+  'offline.html',
+  'style.css',
+  'images/icons-192.png',
+  'images/icons-512.png'
 ];
 
 self.addEventListener('install', (event) => {
@@ -28,7 +28,7 @@ self.addEventListener('fetch', (event) => {
         }
         return fetch(event.request)
           .catch(() => {
-            return caches.match('/2411532001-DesainWeb/offline.html');
+            return caches.match('offline.html');
           });
       })
   );
